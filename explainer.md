@@ -56,12 +56,12 @@ Practically speaking, we would expect the Interest Group:
 
 ## Expected participants
 
-''Network operators'' have clear needs in improving their ability to manage networks, reducing the cost and improving the performance for their subscribers. They have the means to push for the operational adoption of changes, and the understanding of the technical and economic constraints in defining them.
+**Network operators** have clear needs in improving their ability to manage networks, reducing the cost and improving the performance for their subscribers. They have the means to push for the operational adoption of changes, and the understanding of the technical and economic constraints in defining them.
 
-''Network equipment providers'' can translate the changes that need to percolate through the network chain in terms of standards and products roadmaps, and shed light on the technical and economic constraints in getting them deployed.
+**Network equipment providers** can translate the changes that need to percolate through the network chain in terms of standards and products roadmaps, and shed light on the technical and economic constraints in getting them deployed.
 
-''Network measurements providers'' can help identify which metrics are readily available to applications and network providers, identify opportunities on when and how these metrics might benefit from being shared across layers, and define frameworks that enable operational accountability in network/app collaboration.
+**Network measurements providers** can help identify which metrics are readily available to applications and network providers, identify opportunities on when and how these metrics might benefit from being shared across layers, and define frameworks that enable operational accountability in network/app collaboration.
 
-''OS vendors'' and ''browser vendors'' determine what features (incl. networking APIs) get exposed to application developers on end-user devices and how they are gated for access. Similarly, ''cloud and edge providers'' provide these capabilities on the server-side.
+**OS vendors** and **browser vendors** determine what features (incl. networking APIs) get exposed to application developers on end-user devices and how they are gated for access. Similarly, **cloud and edge providers** provide these capabilities on the server-side.
 
-''Application providers'' (esp. those with a high degree of sensitivity to network conditions, e.g. media content providers) have domain-specific and business-specific requirements in how they wish they could get the best performances out of the underlying networks to satisfy the need from their users.
+**Application providers** (esp. those with a high degree of sensitivity to network conditions, e.g. media content providers) have domain-specific and business-specific requirements in how they wish they could get the best performances out of the underlying networks to satisfy the need from their users.
