@@ -44,7 +44,7 @@ A few specific opportunities fitting the above criteria have identified looking 
 We believe a W3C Interest Group (with a working name of "Web & Networks") could provide a useful forum to push this collaboration agenda further; such a group, modeled after the Media & Entertainment Interest Group would:
 * develop and maintain a list of relevant activities in the network/application collaboration space, in both proprietary and standard ecosystems,
 * identify opportunities for network and app collaborations that seem likely good candidates for adoption, analyse them in relation to existing standardization efforts, and when relevant, build the case for additional or prioritized standardization,
-* actively liaise and coordinate with relevant standards organizations to keep track of their relevant activities, to identify and when possible, help lift obstacles they may be facing, and to ensure they're provided with a cohesive understanding of use cases and requirements coming from Web applications.
+* actively liaise and coordinate with relevant standards organizations (esp. 3GP, IETF) to keep track of their relevant activities, to identify and when possible, help lift obstacles they may be facing, and to ensure they're provided with a cohesive understanding of use cases and requirements coming from Web applications.
 
 ## Interest Group deliverables
 
