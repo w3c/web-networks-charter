@@ -44,7 +44,7 @@ A few specific opportunities fitting the above criteria have identified looking 
 We believe a W3C Interest Group (with a working name of "Web & Networks") could provide a useful forum to push this collaboration agenda further; such a group, modeled after the Media & Entertainment Interest Group would:
 * develop and maintain a list of relevant activities in the network/application collaboration space, in both proprietary and standard ecosystems,
 * identify opportunities for network and app collaborations that seem likely good candidates for adoption, analyse them in relation to existing standardization efforts, and when relevant, build the case for additional or prioritized standardization,
-* actively liaise and coordinate with relevant standards organizations (esp. 3GP, IETF) to keep track of their relevant activities, to identify and when possible, help lift obstacles they may be facing, and to ensure they're provided with a cohesive understanding of use cases and requirements coming from Web applications.
+* actively liaise and coordinate with relevant standards organizations (esp. 3GPP, IETF) to keep track of their relevant activities, to identify and when possible, help lift obstacles they may be facing, and to ensure they're provided with a cohesive understanding of use cases and requirements coming from Web applications.
 
 ## Interest Group deliverables
 
@@ -52,7 +52,7 @@ Practically speaking, we would expect the Interest Group:
 * to organize monthly calls, each on a specific in-scope topic, often with external presenters (from other W3C groups, from other SDOs, from relevant proprietary or open-source efforts),
 * to maintain a roadmap of specific technical opportunities for greater network/app cooperation, reviewing them for their chances of success given lessons learnt from past successful and failed attempts, mapping them to ongoing standardization efforts (if any), keeping track of their chain of dependencies and identifying obstacles to their progress and plans for lifting them,
 * to develop use cases and requirements emerging from Web applications needs in terms of network that cannot be addressed with the current set of standardized network interactions,
-* to maintain a list of relevant groups and contacts in other standard organizations, consortia and software projects, and a plan of communication and liason with them.
+* to maintain a list of relevant groups and contacts in other standard organizations (esp. 3GPP, IETF), consortia and software projects, and a plan of communication and liason with them.
 
 ## Expected participants
 
