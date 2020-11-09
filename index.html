@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type=
     "text/css" media="screen">
     <link rel="stylesheet" type="text/css" href=
-    "https://www.w3.org/Guide/pubrules-style.css">
+    "https://www.w3.org/OldGuide/pubrules-style.css">
     <link rel="stylesheet" type="text/css" href=
     "https://www.w3.org/2006/02/charter-style.css">
     <style>
@@ -95,7 +95,7 @@
       <p class="mission">
         The <strong>mission</strong> of the Web &amp; Networks Interest Group
         is to explore solutions for web applications to leverage network
-        capabilities in order to achieve better performance and resources
+        capabilities and information in order to achieve better performance and resources
         allocation, both on the device and network.
       </p>
       <div class="noprint">
@@ -126,7 +126,7 @@
               End date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy]</i>
+              31 January 2023
             </td>
           </tr>
           <tr>
@@ -135,7 +135,8 @@
             </th>
             <td>
               Dan Druta (AT&amp;T); 
-              Sudeep Divakaran (Intel)
+              Sudeep Divakaran (Intel);
+              Song Xu (China Mobile)
             </td>
           </tr>
           <tr>
@@ -168,10 +169,7 @@
           The Web &amp; Networks Interest Group's scope spans Web and
           Networking technologies that can <strong>enhance the quality of
           experience of web applications</strong>, by exposing Web APIs that
-          consider factors such as real-time performance, network throughput indicators, and data transfer latencies while preserving security and privacy requirements,
-          and by exposing relevant capabilities in network-profiling developer
-          tools.
-        </p>
+          consider factors such as network performance, device capabilities (e.g. client devices, edge or cloud) for optimal distributed compute and data transfer latencies, and by enhancing network-profiling and diagnostics browser developer tools, while preserving security and privacy requirements.        </p>
         <p>The scope of the group encompasses both wired and wireless networks.</p>
         <p>
           Topics and areas that are in-scope for the Interest Group include:
@@ -184,18 +182,17 @@
             <ul>
               <li>Multipath, multi-carrier, multi-connectivity handling;
               </li>
-              <li>Latency vs bandwidth tradeoffs, for instance high bandwidth
-              4K video stream, or low latency video call, etc.;
-              </li>
-              <li>Device power and performance balancing.
+              <li>Latency vs bandwidth trade-offs, for instance high bandwidth
+              4K video stream, or low latency video call, etc.
               </li>
             </ul>
           </li>
+          <li><strong>Network hints to device applications</strong> to enable moving of compute functions across the network between client, edge or cloud depending on user-experience and compute requirements, and optimal resource utilization. This can complement other offload decision factors like contextual information, for e.g. cost, privacy, battery level, etc. </li>
           <li>
             <strong>Exposure of specialized services</strong> such as DiffServ,
-            5G Slices, and Edge Computing, including load balancing computing
-            between edge devices and the cloud, particularly in
-            latency-sensitive applications like Machine Learning inference.
+            5G Slices, WebTransport and Edge Computing, including load balancing computing
+            between client devices, edge and cloud, particularly in
+            latency-sensitive applications like Machine Learning inference and Cloud Gaming.
           </li>
           <li>
             <strong>Exposure of aggregated web metrics</strong> beyond application
@@ -204,7 +201,7 @@
             troubleshooting of network issues through the passive observation
             of transport layer data (such as TCP sequence numbers) is more challenging.
             However, web applications often have access to rich performance
-            metrics (e.g. Navigation Timing API; WebRTC getStats API…).
+            metrics (e.g. Navigation Timing API, WebRTC getStats API, etc).
             A new troubleshooting approach would arise if these metrics
             were aggregated according to the network topology, such that any interested
             party (including network operators) is in position to troubleshoot
@@ -224,10 +221,11 @@
           </li>
           <li>
             <strong>Liaise and coordinate with relevant networking standards
-            organizations</strong> (esp. 3GPP, IETF) to track their
+            organizations</strong> (esp. ETSI, 3GPP, IETF, etc) to track their
             activities and provide them with relevant use
             cases and requirements from web applications.
           </li>
+          <li><strong>Collaborate with W3C Working and Interest Groups</strong> on common use-cases like peer-to-peer or multi-cast content distribution, Edge compute machine and capability discovery, improving diagnostics for last mile network, standardization of trace formats for network emulation browser tools, etc.</li>
           <li>
             <strong>Share the latest developments in networking
             standardization bodies</strong>, comprised of telecommunication
@@ -377,20 +375,24 @@
           </h3>
           <dl>
             <dt>
-              <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time
-              Communications Working Group</a>
+              <a href="https://www.w3.org/WoT/IG/">Web of Things Interest
+              Group</a>
             </dt>
             <dd>
-              The Web Real-Time Communications Working Group works on the
-              WebRTC Next Version (WebRTC-NV). The Web & Networks IG should
-              coordinate with this group to ensure the <a href=
-              "https://w3c.github.io/webrtc-nv-use-cases/">next version use
-              cases</a> can be implemented efficiently considering requirements
-              on the networks such as exchange of large files without
-              disruption to audio/video sessions, maintain a long-term
-              connection and seek to minimize power consumption. Secondarily,
-              explore implications of the new transport protocols such as the
-              QUIC.
+              Web of Things depends on networking technologies on the edge and
+              in the cloud when exposing interactions between Things, which can also include Edge devices. The Web &
+              Networks IG should coordinate with Web of Things IG to ensure
+              future work considers networking parameters that impact performance in edge compute offload like use-cases. The group should also evaluate extending Thing Description for Edge Compute Devices.
+            </dd>
+            <dt>
+              <a href="https://www.w3.org/2017/03/webtv-charter.html">Media and 
+              Entertainment Interest Group</a>
+            </dt>
+            <dd>
+              The Media and Entertainment Interest Group's scope covers Web 
+              technologies used in the end-to-end pipeline — including capture, 
+              production, distribution and consumption — of continuous media 
+              and their associated technologies such as timed text.
             </dd>
             <dt>
               <a href="https://www.w3.org/das/">Devices and Sensors Working
@@ -414,6 +416,36 @@
               sets low latency requirements for delivery over the network.
             </dd>
             <dt>
+              <a href="https://www.w3.org/webperf/">Web Performance Working Group</a>
+            </dt>
+            <dd>
+              The Web Performance Working Group's scope of work includes user agent 
+              features and APIs to observe and improve aspects of application performance, 
+              such as measuring network and rendering performance, responsiveness and 
+              interactivity, memory and CPU use, application failures, and similar APIs 
+              and infrastructure to enable measurement and delivery of better user experience. The Web & Networks IG will discuss ways to improve application performance under varying network conditions or new content delivery infrastructures (e.g. Edge Computing).
+            </dd>
+            <dt><a href="https://www.w3.org/2018/distributed-tracing/">Distributed Tracing Working Group</a></dt>
+            <dd>The Distributed Tracing Working Group defines standards for interoperability between tracing tools to enable propagation and correlation of tracing data across different implementations. The Web & Networks IG will coordinate with this group on topics around standardizing trace formats for potential network emulation browser tools.</dd>
+            <dt>
+              <a href="https://www.w3.org/2011/04/webrtc/">Web Real-Time
+              Communications Working Group</a>
+            </dt>
+            <dd>
+              The Web Real-Time Communications Working Group works on the
+              WebRTC Next Version (WebRTC-NV). The Web & Networks IG should
+              coordinate with this group to ensure the <a href=
+              "https://w3c.github.io/webrtc-nv-use-cases/">next version use
+              cases</a> can be implemented efficiently considering requirements
+              on the networks such as exchange of large files without
+              disruption to audio/video sessions, maintain a long-term
+              connection and seek to minimize power consumption. Secondarily,
+              explore implications of the new transport protocols such as the
+              QUIC.
+            </dd>
+            <dt><a href="https://www.w3.org/groups/wg/webtransport">WebTransport Working Group</a></dt>
+            <dd>The WebTransport Working Group develops APIs that enable data transfer between browsers and servers with support for multiple streams, unidirectional streams, out-of-order delivery, variable reliability and pluggable protocols.</dd>
+            <dt>
               <a href=
               "https://www.w3.org/community/webmachinelearning/">Machine
               Learning for the Web Community Group</a>
@@ -426,37 +458,6 @@
               learning using network hints including bandwidth and latency,
               radio power consumption, and available computing power and
               battery on the client.
-            </dd>
-            <dt>
-              <a href="https://www.w3.org/2017/03/webtv-charter.html">Media and 
-              Entertainment Interest Group</a>
-            </dt>
-            <dd>
-              The Media and Entertainment Interest Group's scope covers Web 
-              technologies used in the end-to-end pipeline — including capture, 
-              production, distribution and consumption — of continuous media 
-              and their associated technologies such as timed text.
-            </dd>
-            <dt>
-              <a href="https://www.w3.org/WoT/IG/">Web of Things Interest
-              Group</a>
-            </dt>
-            <dd>
-              Web of Things depends on networking technologies on the edge and
-              in the cloud when exposing interactions between Things. The Web &
-              Networks IG should coordinate with Web of Things IG to ensure
-              future Web of Things work can make use of networking parameters
-              that may impact performance.
-            </dd>
-            <dt>
-              <a href="https://www.w3.org/webperf/">Web Performance Working Group</a>
-            </dt>
-            <dd>
-              The Web Performance Working Group's scope of work includes user agent 
-              features and APIs to observe and improve aspects of application performance, 
-              such as measuring network and rendering performance, responsiveness and 
-              interactivity, memory and CPU use, application failures, and similar APIs 
-              and infrastructure to enable measurement and delivery of better user experience. 
             </dd>
             <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
             <dd>The Web & Network Interest Group will seek guidance from the APA Working Group to ensure the accessibility of protocol and interactions of possible technical solutions be taken into account early in their design process.</dd>
@@ -550,16 +551,6 @@
               charge of the development of standards for coded representation
               of digital audio, video and related data.
             </dd>
-            <dt>
-              <a href="http://www.onem2m.org/">oneM2M</a>
-            </dt>
-            <dd>
-              The oneM2M develops technical specifications which address the
-              need for a common M2M Service Layer that can be readily embedded
-              within various hardware and software, and relied upon to connect
-              the myriad of devices in the field with M2M application servers
-              worldwide.
-            </dd>
           </dl>
         </div>
       </section>
@@ -586,6 +577,8 @@
           the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
           Policy</a>.
         </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
       </section>
       <section id="communication">
         <h2>
@@ -604,8 +597,8 @@
         </p>
         <p>
           Information about the group (including details about deliverables,
-          issues, actions, status, participants, and meetings) will be
-          available from the Interest Group home page.
+          issues, actions, status, participants, and meetings) is
+          available from the <a href="https://www.w3.org/web-networks/">Interest Group home page</a>.
         </p>
         <p>
           Most Interest Group teleconferences will focus on discussion of
@@ -748,10 +741,10 @@
                   <a href=".">Initial Charter</a>
                 </th>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  2019-05-15
                 </td>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  2020-12-31
                 </td>
                 <td>
                   First charter
@@ -770,7 +763,7 @@
       <p class="copyright">
         <a href=
         "https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
-        © 2019 <a href="https://www.w3.org/"><abbr title=
+        © 2020 <a href="https://www.w3.org/"><abbr title=
         "World Wide Web Consortium">W3C</abbr></a><sup>®</sup> ( <a href=
         "https://www.csail.mit.edu/"><abbr title=
         "Massachusetts Institute of Technology">MIT</abbr></a>, <a href=
