@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -51,6 +52,9 @@
       <aside>
         <ul id="navbar">
           <li>
+            <a href="#background">Background</a>
+          </li>
+          <li>
             <a href="#scope">Scope</a>
           </li>
           <li>
@@ -95,9 +99,9 @@
       <p class="mission">
         The <strong>mission</strong> of the <a href="https://www.w3.org/wiki/Networks">
         Web &amp; Networks Interest Group </a>
-        is to explore solutions for web applications to leverage network
-        capabilities and information in order to achieve better performance and resources
-        allocation, both on the device and network.
+        is to explore solutions for web applications to leverage network 
+        information and capabilities, and edge compute to achieve better performance 
+        and better efficiency of network resource allocation, both on the device and network.
       </p>
       <div class="noprint">
         <p class="join">
@@ -126,7 +130,7 @@
               End date
             </th>
             <td>
-              30 April 2023
+              xx October 20xx
             </td>
           </tr>
           <tr>
@@ -144,7 +148,7 @@
               Team Contacts
             </th>
             <td>
-              Dominique Hazael-Massieux (0.1 FTE)
+               (0.1 FTE)
             </td>
           </tr>
           <tr>
@@ -152,7 +156,9 @@
               Meeting Schedule
             </th>
             <td>
-              <strong>Teleconferences:</strong> A regular teleconference will be held, at least quarterly, with additional calls as required. Task Forces may have separate calls that will not overlap with each other. <br>
+              <strong>Teleconferences:</strong> A regular teleconference will be held, 
+              at least quarterly, with additional calls as required. Task Forces may have 
+              separate calls that will not overlap with each other. <br>
               <strong>Face-to-face:</strong> we will meet during the W3C's
               annual Technical Plenary week; additional face-to-face meetings
               may be scheduled by consent of the participants, usually no more
@@ -161,6 +167,49 @@
           </tr>
         </table>
       </section>
+      
+      <section id="background" class="background">
+        <h2>
+          Background
+        </h2>
+        <p>
+        New trends are seen in network traffic patterns due to emerging 
+          new use-cases that leverage computing resources across device, 
+          edge, and cloud that are shaping the focus areas for the Interest Group 
+          charter. These trends are leading indicators of the types of next generation 
+          applications. This also entail new dependencies and challenges to meet expectations 
+          for quality of experience and efficient usage of networking and computing resources.
+        </p>
+        <p>A few such trends are highlighted below:</p>
+        <ul>
+          <li>
+          Offloading capabilities that enable efficient usage of compute across Client-Edge-Cloud is gaining traction in 
+            several use-cases. Some of the use-cases are listed in the explainer draft <a href=
+          "https://w3c.github.io/edge-computing-web-exploration/">Client-Edge-Cloud coordination Use Cases and Requirements</a>.
+          </li>
+          <li>
+          Uplink traffic data patterns have seen a large increase in data sizes and use-case requirements, which is a 
+            shift from the past, where applications data were predominantly in the downlink direction. 
+            The <a href="https://www.ericsson.com/49dd9d/assets/local/reports-papers/mobility-report/documents/2023/ericsson-mobility-report-june-2023.pdf">
+              Ericsson Mobility Report June 2023</a> highlighted increase in uplink data-intensive 
+            content and growth in data consumption. Uplink-demanding services like XR are re-shaping 
+            how networks need to be deployed for efficient resource utilization.
+          </li>
+          <li>
+          The <a href="https://www.business.att.com/content/dam/attbusiness/guides/att-network-edge-use-cases.pdf">AT&T Network Edge Use-Cases</a> report lists the trends in new use-cases where Edge Networks can play a key role.
+          </li>
+          <li>
+          To succeed in edge computing, a strategy leveraging the latest networking and web standards will be key. 
+            Gartner in its report <a href="https://www.gartner.com/en/documents/4263499">Build an Edge Computing Strategy</a> 
+          highlights the importance of creating and socializing the vision in the eco-system.
+          </li>
+          <li>
+          New advancements in 6G and AI that can leverage peer-to-peer communications, mesh architectures and sustainable modes of communications 
+            will further drive innovations in the Web application space.
+          </li>
+        </ul>
+      </section>
+      
       <section id="scope" class="scope">
         <h2>
           Scope
@@ -169,42 +218,48 @@
           The Web &amp; Networks Interest Group's scope spans Web and
           Networking technologies that can <strong>enhance the quality of
           experience of web applications</strong>, by exposing Web APIs that
-          consider factors such as network performance, device capabilities (e.g. client devices, edge or cloud) for optimal distributed compute and data transfer latencies, and by enhancing network-profiling and diagnostics browser developer tools, while preserving security and privacy requirements.        </p>
+          consider factors such as network performance, device capabilities (e.g. client devices, edge or cloud) for improved 
+          distributed compute and data transfer latencies, while preserving security and privacy requirements.</p>
         <p>The scope of the group encompasses both wired and wireless networks.</p>
         <p>
           Topics and areas that are in-scope for the Interest Group include:
         </p>
         <ul>
           <li>
-            <strong>Application hints to the network</strong> (e.g. ways for applications to declare their operational wishes to the network). Specifically, the group will focus on hints and similar approaches that can
-            simultaneously benefit web application and network performance (in
-            general-purpose browsers, tablets, phones). For instance:
+          	<strong>Client-Edge-Cloud Coordination</strong> and evolving next generation use-cases 
+            for edge computing, network usage patterns and challenges (e.g., new uplink centric use-cases, 
+            graphics distributed rendering, distributed computing, generative AI applications, etc.).
+          </li>
+          <li>  
+            <strong>Application hints to the network</strong> (e.g. ways for applications to 
+            declare their operational wishes to the network). Specifically, the group will 
+            focus on hints (e.g., QoS, user perception metrics) that can be used to optimize 
+            network resource allocation and performance achieve best web application and 
+            network performance. For instance:
             <ul>
-              <li>Multipath, multi-carrier, multi-connectivity handling;
-              </li>
               <li>Latency vs bandwidth trade-offs, for instance high bandwidth
               4K video stream, or low latency video call, etc.
               </li>
+              <li>Prediction based hints for look-ahead network resource planning, balancing and allocation.
+              </li>
             </ul>
           </li>
-          <li><strong>Network hints to device applications</strong> to enable moving of compute functions across the network between client, edge or cloud depending on user-experience and compute requirements, and optimal resource utilization. This can complement other offload decision factors like contextual information, for e.g. cost, privacy, battery level, etc. </li>
-          <li>
-            <strong>Exposure of specialized services</strong> such as DiffServ,
-            5G Slices, WebTransport and Edge Computing, including load balancing computing
-            between client devices, edge and cloud, particularly in
-            latency-sensitive applications like Machine Learning inference and Cloud Gaming (used for rendering game on the cloud).
+          <li><strong>Network hints to device applications</strong> to enable migration of compute 
+            functions across the network between client, edge or cloud depending on user experience 
+            and compute requirements, and improved resource utilization.
           </li>
           <li>
-            <strong>Evaluation of aggregated web metrics</strong> for enhanced troubleshooting 
-            and network performance optimization to improve web application experience. In addition 
-            to this, analyze privacy and security risks and evaluate related mitigation considerations. 
+            <strong>Evaluation of Privacy and Security risks</strong> of distributed compute-based 
+            solutions and evaluate related mitigation considerations using hardware and software support. 
           </li>
         </ul>
-        <p>Among those, the primary focus of the group is expected to be on finding standardization items on the following topics:</p>
+        <p>Among those, the primary focus of the group is expected to be on discovering and 
+          defining standardization items on the following topics on:</p>
         <ul>
-          <li>the role of Edge Computing offloading for browsers and Web applications;</li>
-          <li>the role network performance monitoring and prediction for Web application optimizations;</li>
-          <li>the role of peer-to-peer network topologies in content distribution.</li>
+          <li>the role of Edge Computing offloading for browsers and Web applications and 
+            study the privacy & security related challenges to enable it;</li>
+          <li>the role of network performance monitoring and prediction for Web application optimizations;</li>
+          <li>the role of application hints and network metrics that can enable sustainable and efficient networking solutions, without compromising user-experience.</li>
         </ul>
         <p>
           The tasks that the Interest Group will undertake include:
@@ -223,7 +278,11 @@
             activities and provide them with relevant use
             cases and requirements from web applications.
           </li>
-          <li><strong>Collaborate with W3C Working and Interest Groups</strong> on common use-cases like peer-to-peer or multi-cast content distribution, Edge compute machine and capability discovery, improving diagnostics for last mile network, standardization of trace formats for network emulation browser tools, etc.</li>
+          <li><strong>Collaborate with W3C Working and Interest Groups</strong> on 
+            common use-cases like peer-to-peer or multi-cast content distribution, 
+            edge computing, identifiers, capability discovery, improving diagnostics for 
+            last mile networks, standardization of trace formats for network emulation browser tools, etc.
+          </li>
           <li>
             <strong>Share the latest developments in networking
             standardization bodies</strong>, comprised of telecommunication
@@ -243,6 +302,15 @@
             and gather data about network deployments to support web
             browser developer tools for profiling and performance analysis
             under various network conditions.
+          </li>
+          <li>
+            <strong>Analyze secure networking and trust model requirements</strong> needed 
+            in the context of Edge Computing and offload to Edge.
+          </li>
+          <li>
+            <strong>Study measurement techniques to gather data metrics</strong> that can 
+            give insights around Network Efficiency improvement to aid Sustainability and 
+            Power Efficiency.
           </li>
           <li>
             <strong>Provide guidelines to browser developers</strong> on how to
@@ -292,7 +360,7 @@
             drive the development of work items.
             </li>
             <li>Engagement and coordination with other organizations in the
-            Telecommunications, Media and Internet industries to recommend and coordinate
+            Telecommunications, Edge Computing, Media, Security and Internet industries to recommend and coordinate
             technical standards development and promote adherence to W3C and/or
             other standards.
             </li>
@@ -308,6 +376,7 @@
           IG Notes that identify
           <ol>
             <li>List of new use-cases and innovations in networking domain that can benefit Web applications</li>
+            <li> Identify use-cases which require innovative solutions to improve sustainability and optimal network energy utilization.</li>
             <li>Requirements for existing and/or new technical specifications</li>
             <li>Gap-analysis between use-case requirements and current Web Platform standards</li>
           </ol>
@@ -344,12 +413,14 @@
           <h3>
             Timeline
           </h3>
-          <p>The IG will, during its lifetime, undertake different activities that may proceed in parallel. This will include presentations by external Guest speakers or IG members (at least once per quarter) on upcoming technologies in Wireless and Wired Telecommunication Standards and new trends in Use-cases.</p>
+          <p>The IG will, during its lifetime, undertake different activities that may proceed in parallel. 
+            This will include presentations by external Guest speakers or IG members (at least once per quarter) on 
+            upcoming technologies in Wireless and Wired Telecommunication Standards and new trends in Use-cases.</p>
           <ul>
-            <li>Document list of use-cases that can benefit from Network Information and corresponding requirements. Deliver a first draft in Q1 2022.</li>
-            <li>Evaluate Network Browser Developer Tools extensions for web application testing. Depending on interest seen and proposals gathered, document a first draft by Q1 2022.</li>
-            <li>Identify and define requirements for the discovery and capability description of  network nodes used to offload web based workloads to the edge. Findings, analysis and requirements document with Q2 2022 delivery.</li>
-            <li>Organize a W3C Workshop in H2 2022 to consolidate new use-cases, requirements and respective cost-benefit analysis, and document outcome in a Whitepaper. </li>
+            <li>Identify and define requirements for the discovery and capability description of network nodes used 
+              to offload web based workloads to the edge. Findings, analysis and requirements document with Q3 2024 delivery.</li>
+            <li>Organize a W3C Workshop in H2 2025 to consolidate new use-cases, requirements and respective cost-benefit analysis, 
+              and document outcome in a Whitepaper.</li>
           </ul>
         </div>
       </section>
@@ -366,12 +437,14 @@
           "Technical Architecture Group">TAG</a>.
         </p>
 
-        <p>Each  Note or transmission of proposed work should contain a section detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+        <p>Each Note or transmission of proposed work should contain a section detailing 
+          all known security and privacy implications for implementers, Web authors, and end users.</p>
         <p>
-          Additional technical coordination with the following Groups will be
+          Potential technical coordination and evaluation with the following Groups will be
           made, per the <a href=
           "https://www.w3.org/Consortium/Process/#WGCharter">W3C Process
-          Document</a>:
+          Document</a>. This is not an exhaustive list and new collaborations with W3C 
+          Groups or external groups may be included as appropriate.
         </p>
         <div>
           <h3 id="w3c-coordination">
@@ -383,10 +456,12 @@
               Group</a>
             </dt>
             <dd>
-              Web of Things depends on networking technologies on the edge and
-              in the cloud when exposing interactions between Things, which can also include Edge devices. The Web &
-              Networks IG should coordinate with Web of Things IG to ensure
-              future work considers networking parameters that impact performance in edge compute offload like use-cases. The group should also evaluate extending Thing Description for Edge Compute Devices.
+              Web of Things depends on networking technologies on the edge and in 
+              the cloud when exposing interactions between Things, which can also include 
+              Edge devices. The Web & Networks IG should coordinate with Web of Things IG to 
+              ensure future work considers networking parameters that impact communication and 
+              performance in both IoT and edge compute offload like use-cases. The group should 
+              also evaluate extending Thing Description for Edge Compute Devices.
             </dd>
             <dt>
               <a href="https://www.w3.org/2017/03/webtv-charter.html">Media and 
@@ -406,14 +481,7 @@
             <dd>
               The Devices and Sensors Working Group (DAS WG) defines
               client-side APIs that enable the development of Web Applications
-              that interact with device hardware and sensors. <a href=
-              "https://wicg.github.io/netinfo/">Network Information API</a>
-              incubation enables web applications to access information about
-              the network connection in use by the device and <a href=
-              "https://wicg.github.io/priority-hints/">Priority Hints</a>
-              incubation provide developers with the control to indicate a
-              resource's relative importance to the browser. The Web & Networks
-              IG can propose new features and enhancements for these APIs. The
+              that interact with device hardware and sensors. The
               <a href="https://w3c.github.io/sensors/">Generic Sensor API</a>
               defines a framework for exposing sensor data to the web platform
               in a consistent way. Sensors produce high frequency data that
@@ -427,7 +495,9 @@
               features and APIs to observe and improve aspects of application performance, 
               such as measuring network and rendering performance, responsiveness and 
               interactivity, memory and CPU use, application failures, and similar APIs 
-              and infrastructure to enable measurement and delivery of better user experience. The Web & Networks IG will discuss ways to improve application performance under varying network conditions or new content delivery infrastructures (e.g. Edge Computing).
+              and infrastructure to enable measurement and delivery of better user experience. 
+              The Web & Networks IG will discuss ways to improve application performance under varying 
+              network conditions or new content delivery infrastructures (e.g. Edge Computing).
             </dd>
             <dt><a href="https://www.w3.org/2018/distributed-tracing/">Distributed Tracing Working Group</a></dt>
             <dd>The Distributed Tracing Working Group defines standards for interoperability between tracing tools to enable propagation and correlation of tracing data across different implementations. The Web & Networks IG will coordinate with this group on topics around standardizing trace formats for potential network emulation browser tools.</dd>
@@ -463,8 +533,24 @@
               radio power consumption, and available computing power and
               battery on the client.
             </dd>
+            <dt><a href="https://www.w3.org/groups/wg/auto/">Automotive Working Group</a></dt> 
+            <dd>
+              The automotive segment is leveraging network connectivity to Edge and Cloud services 
+              for its in-vehicle services and autonomous driving solutions. The Web & Networks IG
+              will engage with Automotive WG to explore new use-cases in the areas of wireless
+              networking and edge computing in the automotive sector.
+            </dd>
+            <dt><a href="https://www.w3.org/2019/did-wg/">Decentralized Identifier Working Group</a></dt> 
+            <dd>
+              The Decentralized Identifier Working Group scope is to standardize the DID URI scheme,
+              the data model and syntax of DID Documents. For the networking and distributed edge
+              computing use-cases analyzed within the Web & Networks IG, the IG will coordinate with
+              DID WG to explore the potential of DID and suitable solutions to address the use-case requirements.
+            </dd>
             <dt><a href="https://www.w3.org/WAI/APA/">Accessible Platform Architectures Working Group</a></dt>
-            <dd>The Web & Network Interest Group will seek guidance from the APA Working Group to ensure the accessibility of protocol and interactions of possible technical solutions be taken into account early in their design process.</dd>
+            <dd>The Web & Network Interest Group will seek guidance from the APA Working Group to ensure the 
+              accessibility of protocol and interactions of possible technical solutions be taken into account 
+              early in their design process.</dd>
           </dl>
           <h3 id="external-coordination">
             External Organizations
@@ -507,11 +593,7 @@
             <dd>
               Institute of Electrical and Electronics Engineers (IEEE) develops
               a family of IEEE 802.11 standards that cover Wireless LAN
-              technology. Some 802.11 features are surfaces through <a href=
-              "https://wicg.github.io/netinfo/">Network Information API</a>
-              including estimated max downlink speeds of various 802.11
-              generations. Other possible parameters for consideration include
-              e.g. backhaul congestion and network switching time.
+              technology. 
             </dd>
             <dt>
               <a href="https://www.ietf.org/">IETF</a>
@@ -546,6 +628,13 @@
               H.762: Lightweight interactive multimedia framework for IPTV
               services (LIME) gives a subset of HTML, CSS and ECMAScript for
               use in IPTV terminals.
+            </dd>
+            <dt>
+              <a href="https://metaverse-standards.org/">Metaverse Standards Forum</a>
+            </dt>
+            <dd>Metaverse Standards Forum is a venue for cooperation between standards organizations 
+            and companies to foster the development of interoperability standards for an open and 
+            inclusive metaverse, and accelerate their development and deployment. 
             </dd>
             <dt>
               <a href="https://www.iso.org/committee/45316.html">ISO/IEC JTC 1/SC 29</a>
@@ -751,27 +840,59 @@
               
               <tr>
                 <th>
-                  <a>Proposed Draft Charter</a>
+                  <a>New Charter</a>
                 </th>
                 <td>
-                  2021-05-01
+                 2021-04-08
                 </td>
                 <td>
                   2023-04-30
                 </td>
                 <td>
                   <ul>
-                    <li>Added hyperlink to group's Wiki in mission statement, listing current activities and those covered in the previous year</li>
                     <li>Updated scope based on group's workstreams around distributed compute linked use-cases</li>
                     <li>Included study of network hints to applications as a dedicated topic in the scope section, based on group’s current activities</li>
                     <li>Updated scope of web metrics identification and evaluation topic to include privacy analysis</li>
-                    <li>Updated the list of tasks to include collaboration with specific W3C groups interested to leverage edge compute 
-                      and networking elements like network information, diagnostic APIs and tools for their use-cases</li>
+                    <li>Updated the list of tasks to include collaboration with specific W3C groups interested to leverage edge compute and networking elements like network information, diagnostic APIs and tools for their use-cases</li>
                     <li>Expanded the primary deliverables by splitting them into three key items – new use-cases, requirements and gap-analysis</li>
-                    <li>Updated the lists of related W3C groups and External Organizations in the Dependencies section</li>
                   </ul>
                 </td>
               </tr>
+                <th>
+                  <a>Charter Extension</a>
+                </th>
+                <td>
+                 2023-04-27
+                </td>
+                <td>
+                  2023-10-31
+                </td>
+                <td>
+                    Charter extended
+                </td>
+              </tr>
+            
+              <tr>
+                <th>
+                  <a>Recharter Proposal</a>
+                </th>
+                <td>
+                 2023-11-01
+                </td>
+                <td>
+                  2025-10-31
+                </td>
+                <td>
+                  <ul>
+                    <li>Updated mission statement to include exploration of solutions to improve network resource allocation 
+                      and efficiency, and leveraging of new technologies like edge computing </li>
+                    <li>Added Background section</li>
+                    <li>Under Scope section, included Client-Edge-Cloud Coordination as a new topic </li>
+                    <li>Added two study tasks around trust model and network resource utilization in Scope section</li>
+                  </ul>
+                </td>
+              </tr>
+
             </tbody>
           </table>
         </section>
